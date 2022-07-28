@@ -246,8 +246,8 @@ header .mynavbar a:hover{
 }
 .review .card img{
     border: 1rem solid var(--gray);
-    height: 10rem;
-    width:10rem;
+    height: 100px;
+    width:100px;
     margin-left: 3rem;
     margin-top: -8rem;
     border-radius: 50%;
