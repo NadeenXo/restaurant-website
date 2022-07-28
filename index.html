@@ -28,8 +28,9 @@
             <a href="#" >contact us</a>
         </div>
     </section>
-    <section id="special">
-    <h1 class="center-text">special <span class="red-text">offers</span></h1>
+    
+    <section id="special" class="special">
+    <p class="center-text">special <span class="red-text">offers</span></p>
     <div class="specialCards card-group">
             <div class="card text-center" style="width: 15rem;">
                 <img src="icons/burger.png" class="card-img-top specialimg w-25" alt="burger">
@@ -64,7 +65,7 @@
 
     <section class="menu" id="menu">
 
-        <h1 class="center-text"> most <span class="red-text">popular</span> foods </h1>
+        <p class="center-text"> most <span class="red-text">popular</span> foods </p>
     
         <div class="box-container">
     
@@ -152,8 +153,8 @@
             <div class="card">
               <img src="icons/worker.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <h5 class="card-title">titi</h5>
+                <p class="card-text">delecious burger <br> with a tasty rant souce <br> yuummmyyyy!!</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">3 months ago</small>
@@ -162,17 +163,17 @@
             <div class="card">
               <img src="icons/worker.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">mohamed</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">3 months ago</small>
+                <small class="text-muted">7 months ago</small>
               </div>
             </div>
             <div class="card">
                 <img src="icons/worker.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">nadeen</h5>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div class="card-footer">
@@ -182,7 +183,7 @@
               <div class="card">
                 <img src="icons/worker.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">rowyda</h5>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div class="card-footer">
@@ -193,12 +194,45 @@
 
     </section>
 
-   <!--  <footer>
-        <p>Author: Hege Refsnes<br>
-        <a href="mailto:hege@example.com" class="btn">hege@example.com</a>
-        </p>
-    </footer> -->
-    <footer class="footer">
+    <!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <p ><span class="red-text">order</span> now </p>
+
+    <div class="row">
+        
+        <div class="image " >
+            <img src="icons/worker.png" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="food name">
+            </div>
+
+            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="order now" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- order section ends -->
+
+
+<!-- footer starts -->
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -222,9 +256,9 @@
                         </div>
                     </div>
                     <ul class="footerNav">
-                        <li class="nav-item"><a href="#" class="nav-link"> <img src="icons/facebook.png" ></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><img src="icons/email.png" ></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><img src="icons/phone.png" ></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"> <img src="icons/facebook.png" >rest rant</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="icons/email.png" >example@gmail.com</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><img src="icons/phone.png" >+201110111010</a></li>
                     </ul>
                     <br>
                 </div>
@@ -235,11 +269,13 @@
                 <div class="col-md-5">
                     <form>
                         <fieldset class="form-group">
-                            <input type="email" class="form-control" id="InputEmail" placeholder="Enter email">
+                            <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter email">
                         </fieldset>
+                        <p style="color: red;" id="nomail" ></p>
                         <fieldset class="form-group ">
-                            <button type="submit" class="btn  btn-lg">subscribe</button>
+                            <button type="submit" class="btn btn-lg" onclick="submitEmail()">subscribe</button>
                         </fieldset>
+
                     </form>
                 </div>
             </div>
