@@ -78,7 +78,7 @@ header .mynavbar a:hover{
 
 #home{
     
-    background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.3)),url("imgs/shaw.jpg");
+    background: linear-gradient(rgba(0,0,0, 0.6),rgba(0,0,0, 0.3)),url("imgs/home.jpg");
     min-height:600px;
     background-size: cover;
     background-position: center center;
