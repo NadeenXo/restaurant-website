@@ -23,3 +23,16 @@ function submitEmail(){
     }
     
 }
+
+/*loader*/
+/* function loader(){
+    document.querySelector('.loader-container').classList.add('fade-out');
+  } */
+  function fadeOut(){
+  /*   setInterval(loader, 3000); */
+    setInterval(()=>{
+        document.querySelector('.loader-container').classList.add('fade-out');
+    } , 2000);
+  }
+  
+  window.onload = fadeOut();
