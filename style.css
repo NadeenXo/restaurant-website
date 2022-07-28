@@ -6,6 +6,7 @@
     text-decoration: none;
     text-transform: capitalize;
     /*transition:all .2s linear;*/
+    font-size: small;
 }
 
 :root{
@@ -85,7 +86,6 @@ header .mynavbar a:hover{
 .homeContent{
     overflow: hidden;
     text-align: center;
-
     color: white;
 
 }
@@ -223,9 +223,39 @@ header .mynavbar a:hover{
 
   
   /**/
+/*review*/
+
+.review{
+    margin: 2rem 1rem;
+}
+.review .card-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.review .card-group .card{
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    border-radius: .5rem;
+    margin-top: 8rem;
+    width: 250px;
+    max-height: 300px;
+    margin: 8rem 2px;
+
+}
+.review .card img{
+    border: 1rem solid var(--gray);
+    height: 10rem;
+    width:10rem;
+    margin-left: 3rem;
+    margin-top: -8rem;
+    border-radius: 50%;
+}
 
 
 
+/**/
 
 
 
@@ -310,7 +340,7 @@ header .mynavbar a:hover{
 @media(max-width:900px){
 
     html{
-      font-size: 60%;
+      font-size: 50%;
     }
   
     header{
@@ -363,16 +393,28 @@ header .mynavbar a:hover{
         min-width: 100%;
     
     }
+    .review .card-group .card{
+        min-width: 100%;
+        margin: 6rem 1rem;
+ 
+      }
   
   }
   
-  @media(max-width:450px){
+  @media(max-width:500px){
   
     html{
       font-size: 50%;
     }
     footer {
         height: 800px;
+        padding: 1rem;
+      }
+
+      .review .card-group .card{
+        min-width: 100%;
+        margin: 5rem 1rem;
+ 
       }
   /*
     .order .row form .inputBox input{
