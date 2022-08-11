@@ -51,7 +51,7 @@
 header{
     position: relative;
     top:0; left: 0; right:0;
-    max-height: 35px;
+    max-height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -141,17 +141,15 @@ header .mynavbar a:hover{
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
-  
   position: fixed;
   bottom: 100px;
-  right: 50%;
+  align-items: center;
+  justify-content: center;
   border: 1px solid black;
   background-color: white;
   border-radius: 10px;
   box-shadow: 1px 3px 3px var(--bs-gray);
-  max-width: 350px;
-  min-width: 300px;
-  margin: 30px;
+  margin: 10px 35% ;
   z-index: 9;
   /*prevent popup hidden by othe elements*/
 
@@ -190,9 +188,15 @@ header .mynavbar a:hover{
     width: 100%;
 
 }
+.special .specialCards .card .btn{
+  position: relative;
+  margin: 5px;
+  bottom: 5px;
+
+}
 
 .specialCards div{
- 
+
     margin: 0px 5px;
 
 }
@@ -202,7 +206,13 @@ header .mynavbar a:hover{
     position: relative;
     left: 40%;
 }
-
+.special .specialCards .card-title{
+  font-size: large;
+}
+.special .specialCards .card-text{
+color: var(--gray);
+font-size: large;
+}
 
   /**/
   .menu p, .menu span{
@@ -372,7 +382,7 @@ header .mynavbar a:hover{
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 350px;
+    height: 250px;
   }
   .footerNav li img {
     width: 30px;
@@ -477,11 +487,19 @@ header .mynavbar a:hover{
     section{
       padding:1rem;
     }
+    footer{
+      height: 350px;
+      padding: 1rem;
+    }
+    footer form .form-group{   
+       display: flex;
+       flex-direction: row;
+    }
 
   
   }
 
-  @media(max-width:655px){
+  @media(max-width:700px){
   
     #menubar{
         display: initial;
@@ -534,23 +552,39 @@ header .mynavbar a:hover{
         width: 150px;
         
       }
+      .about .support .column{
+        width: 100%;
+        display: block;
+       }
+       .about .card {
+        margin: 2px;
+      }
 
       footer {
         height: 400px;
         padding: 1rem;
-        
-        
+
       }
+      footer form .form-group{   
+        display: flex;
+        flex-direction: column;
+     }
+     footer form .form-group button{
+      width: max-content;
+     }
+
   
   }
 
   @media(max-width:500px){
- /*  
-    html{
-      font-size: 50%;
-    } */
+     /*  
+      html{
+        font-size: 50%;
+      } */
 
-
+      .form-popup{
+        margin: auto;
+      }
       .review .card-group .card{
         min-width: 100%;
         margin: 5rem 1rem;
@@ -564,5 +598,85 @@ header .mynavbar a:hover{
     .order .row form .inputBox input{
       width:100%;
     }
+
+    .about .support img{
+      display:none;
+    }
  
   }
+
+  /**/
+
+
+
+.about{
+    font-size: large;
+  }
+.about .support .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.about .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about .about-section {
+  margin: 0px 0px 10px 0px;  /*up right down left*/
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.about  .about-section h1{
+  border-bottom: 1px solid gray;
+}
+.about .about-section .mission{
+  color: darkgray;
+  line-height: 2px;
+}
+
+.about .support .container {
+  padding: 0 16px;
+}
+
+.about .support .container::after,
+.about .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about .support .title {
+  color: grey;
+}
+.about .support{
+  text-align: center;
+}
+.about .support img{
+  width: 100px;
+  margin:10px auto;
+}
+.about .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.about .button:hover {
+  background-color: #555;
+}
+
+
+
+/**/

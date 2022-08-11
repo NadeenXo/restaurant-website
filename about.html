@@ -3,22 +3,33 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="aboutStyle.css"/>
+    <link rel="stylesheet" href="style.css"/>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-
+<div class="about">
     <div class="about-section">
-        <h1>About Us</h1>
-        <p>Some text about who we are and what we do.</p>
-        <p>Resize the browser window to see that this page is responsive by the way.</p>
+        <h1>About Us</h1><br>
+        <p class="mission">“ Our mission is to WOW people every day! ”</p>
+        <br>
+        <p class="text">
+            <p>To better the lives and futures of our people. We use ridiculously delicious burritos to do it.</p>
+
+            <p>We prepare and serve high quality, simple food, at a great value, in a home-like environment.
+                
+                because We believe the choices we make about what we eat,
+                 where it comes from and how it’s prepared have a direct and powerful impact on the health of individuals,
+                  communities and the environment.
+            </p>
+        </p>
     </div>
 
     <h2 style="text-align:center">Support Team</h2>
-    <div class="row">
+    <div class="row support">
         <div class="column">
             <div class="card">
-                <img src="icons/worker.png" alt="Jane" style="width:100%">
+                <img src="icons/worker.png" alt="Jane" >
                 <div class="container">
                     <h2>Jane Doe</h2>
                     <p class="title">CEO & Founder</p>
@@ -31,7 +42,7 @@
 
         <div class="column">
             <div class="card">
-                <img src="icons/worker.png" alt="Mike" style="width:100%">
+                <img src="icons/worker.png" alt="Mike" >
                 <div class="container">
                     <h2>Mike Ross</h2>
                     <p class="title">Waiter</p>
@@ -44,7 +55,7 @@
 
         <div class="column">
             <div class="card">
-                <img src="icons/worker.png" alt="John" style="width:100%">
+                <img src="icons/worker.png" alt="John" >
                 <div class="container">
                     <h2>John Doe</h2>
                     <p class="title">Chef</p>
@@ -55,6 +66,59 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-- footer starts -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h5><i class="fa fa-road"></i> ACME CO INC.</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#home">contact us</a></li>
+                            <li><a href="#special">special offers</a></li>
+                            <li><a href="about.html">Support Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="">Legal Terms</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="footerNav">
+                    <li class="nav-item"><a href="#" class="nav-link"> <img src="icons/facebook.png" > RestRant </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="icons/email.png" > example@gmail.com </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="icons/phone.png" > +201110111010 </a></li>
+                </ul>
+                <br>
+            </div>
+            <div class="col-md-2">
+                <h5 class="text-md-right">Emails and offers</h5>
+                <hr>
+            </div>
+            <div class="col-md-5">
+                <form>
+                    <fieldset class="form-group">
+                        <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter email">
+                    </fieldset>
+                    <p style="color: red;" id="nomail" ></p>
+                    <fieldset class="form-group ">
+                        <button type="submit" class="btn btn-lg" onclick="submitEmail()">subscribe</button>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 
