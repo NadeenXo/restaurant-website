@@ -51,38 +51,44 @@
 header{
     position: relative;
     top:0; left: 0; right:0;
-    max-height: 40px;
+    max-height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 1rem;
+    padding: 3rem 2rem;
     box-shadow: 0 .25rem .5rem var(--gray);
     color: var(--black);
     background-color: white;
     font-weight: bold;
+    
 }
 
 .cutlery{
     height: 30px;
     
 }
-header .mylogo {
-    font: 2rem sans-serif;
+header .mylogo { 
+    font: 2.5rem sans-serif;
     color: var(--red);
-    padding-right: 3px;
-}
+    background-color: lavender;
+    padding: 5px;
+  }
 header .mylogo:hover{
-    font: 2rem sans-serif;
     color: var(--dred);
 }
-header a{
+header a{  /*logo and tabs*/
     text-transform: uppercase;
     text-decoration: none;
+    background-color: lavender;
+    padding: 10px;
+    border-radius: 1rem;
 }
-header .mynavbar a{
+
+header .mynavbar a{ /*tabs only*/
     color: var(--black);
-    margin-left: 1rem;
+    margin-left: 2rem;
     text-decoration: none;
+    font-size: 17px;
 }
 
 header .mynavbar a:hover{
@@ -180,6 +186,11 @@ header .mynavbar a:hover{
 
 
 /**/
+.special > p{
+  padding: 2rem 0rem;
+  background-color: lightyellow;
+  margin: 1rem ;
+}
 .special p, .special span{
     font-size: 30px;
 }
@@ -215,6 +226,13 @@ font-size: large;
 }
 
   /**/
+  .menu{
+    background-color: lavender;
+    margin: 2rem 0rem;
+  }
+  .menu > p{
+    padding: 2rem 0rem;
+  }
   .menu p, .menu span{
     font-size: 30px;
 }
@@ -222,6 +240,7 @@ font-size: large;
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
+    margin: 5px;
   }
   
   .menu .box-container .box{
@@ -275,12 +294,24 @@ font-size: large;
 /*review*/
 
 .review{
-    margin: 2rem 1rem;
+    margin: 3rem 1rem;
+    padding: 2rem 1rem;
+ 
+    background-color:rgb(251, 251, 240);
+}
+.review h1{
+  padding: 2rem 0rem;
+  margin: 2rem 0rem;
+  background-color: var(--red);
+  color: white;
+
 }
 .review .card-group{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 2rem 0rem;
+
 
 }
 .review .card-group .card{
@@ -291,15 +322,17 @@ font-size: large;
     width: 250px;
     max-height: 300px;
     margin: 7rem 2px;
+    background-color: white;
 
 }
 .review .card img{
-    border: 1rem solid var(--gray);
+    border: 2px solid var(--gray);
     height: 100px;
     width:100px;
     margin: 2rem;
     margin-top: -8rem;
     border-radius: 50%;
+    background-color: white;
 }
 /*order*/
 .order{
@@ -479,6 +512,13 @@ font-size: large;
     header{
       padding:1rem;
     }
+    header .mynavbar a{ /*tabs only*/
+
+      font-size: 12px;
+    }
+    header .mylogo { 
+        font-size: 1.8rem;
+    }
   
     .cutlery{
         height: 20px;
@@ -504,7 +544,7 @@ font-size: large;
     #menubar{
         display: initial;
       }
-  
+
     header .mynavbar{
 
       position: absolute;
@@ -607,7 +647,7 @@ font-size: large;
 
   /**/
 
-
+/*about us*/
 
 .about{
     font-size: large;
@@ -625,7 +665,7 @@ font-size: large;
 }
 
 .about .about-section {
-  margin: 0px 0px 10px 0px;  /*up right down left*/
+  margin: 0px 0px 20px 0px;  /*up right down left*/
   padding: 50px;
   text-align: center;
   background-color: #474e5d;
@@ -656,6 +696,7 @@ font-size: large;
 }
 .about .support{
   text-align: center;
+  margin-bottom: 20px;
 }
 .about .support img{
   width: 100px;
