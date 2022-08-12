@@ -1,6 +1,7 @@
 /*navbar*/ 
 let menu = document.querySelector('#menubar');
 let navbar = document.querySelector('.mynavbar');
+let tobButton = document.getElementById("myBtn");
 
 menu.onclick = () => {
     navbar.classList.toggle('active');
@@ -10,6 +11,7 @@ window.onscroll = () => {
 }
 
 /*email validation*/
+
 function submitEmail(){
    /*  console.log(document.getElementById("InputEmail").value); */
     let inp = document.getElementById("InputEmail");
@@ -20,8 +22,6 @@ function submitEmail(){
 
       //  Swal.fire("Our First Alert", "With some body text and success icon!", "success");
 
-            
-       
         inp.value="";
     }else{
         document.getElementById("nomail").innerHTML =inp.validationMessage;
@@ -30,7 +30,19 @@ function submitEmail(){
     
 }
 
+  /* subscribe email pop-up form*/ 
+  function openForm() {
+    document.getElementById("myForm").style.display = "flex";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
+
+
 /*loader*/
+
 /* function loader(){
     document.querySelector('.loader-container').classList.add('fade-out');
   } */
@@ -43,11 +55,26 @@ function submitEmail(){
   
   window.onload = fadeOut();
 
-  /**/ 
-  function openForm() {
-    document.getElementById("myForm").style.display = "flex";
+/*end loader*/
+
+/*Scroll Back To Top btn*/
+
+// When the user scrolls down 1000px from the top of the document, show the button
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    tobButton.style.display = "block";
+  } else {
+    tobButton.style.display = "none";
+  }
 }
 
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+// scroll to the top of the document when btn clicked
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome
 }
+
+
+
